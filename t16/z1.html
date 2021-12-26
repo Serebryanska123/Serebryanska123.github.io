@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>t16.z1</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<nav>
+			<a href="z1.html">Анкета</a>
+			<a href="z2.html">Результат</a>
+		</nav>
+		
+		<main>
+			<h1 align="center">Анкета учасника</h1>
+			
+			<form action="z2.html">
+			
+				<div class="form_box">
+					<label>Введіть ваше ім'я</label><br> 
+					<input type="text" maxlength="10" required>
+				</div>
+				
+				
+				<div class="form_box">
+					<label>Введіть ваш клас</label><br> 
+					<input type="number" min="1" max="12" required>
+				</div>
+				
+				<div class="form_box">
+					<label>Введіть ваш e-mail</label><br> 
+					<input type="email" maxlength="10"  required>
+				</div>
+				
+				<div class="form_box">
+					<label>Які мови ви знаєте?</label><br> 
+					<input type="checkbox">Українська<br> 
+					<input type="checkbox">Російська<br> 
+					<input type="checkbox">Англійська<br> 
+				</div>
+				
+				<button type="submit">Перевірка</button>
+			</form>
+		</main>
+	</body>
+</html>
