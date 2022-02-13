@@ -1,0 +1,36 @@
+body{
+     background: black;
+}
+.btn{
+     padding: 10px 20px;
+     background: greenyellow;
+     display: inline-block;
+     border-radius: 10px;
+     color: white;
+     font-weight: bold;
+     animation: btn-move 5s infinite;
+     position: absolute;
+}
+@keyframes btn-move{
+     0%{ transform: rotate(0deg); 
+          left:0;
+
+     }
+     20%{
+          transform: rotate(30deg); 
+          left: 0px;
+          
+     }
+     50%{
+          transform: rotate(0deg);   
+          left: 500px;
+          top: 500px
+     }
+     70%{
+          background:rgb(0,192,226) ;
+     }
+     100%{
+          transform: rotate(-360deg);   
+          left: 0px;
+     }
+}

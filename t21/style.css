@@ -1,0 +1,92 @@
+body{
+     background-color: black ;
+}
+.clock{
+     width: 200px;
+     height: 200px;
+     border: 6px solid white;
+     margin: 100px auto;
+     border-radius: 50%;
+     position: relative;
+}
+.dot{
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     background: aqua;
+     position: absolute;
+     top: calc(50% - 15px);
+     left: calc(50% - 15px);
+     z-index: 5;
+}
+.digit{
+     font-size: 24px;
+     color: white;
+     font-weight: bold;
+     position: absolute;
+}
+.one{
+     top: 0;
+     left: calc(50% - 14px);
+}
+.three{
+     right: 6px;
+     top: calc(50% - 14px);
+}
+.six{
+     bottom: 0;
+     left: calc(50% - 8px);
+}
+.nine{
+     left: 6px;
+     top: calc(50% - 14px);
+}
+.secunds{
+     position: absolute;
+     width: 4px;
+     height: 74px;
+     background:  white;
+     left: calc(50% - 2px);
+     top: calc(50% - 74px);
+     animation: s-rotate 60s infinite steps(60);
+     transform-origin:  2px 74px;
+}
+@keyframes s-rotate{
+     100%{ transform: rotate(360deg);}
+}
+.minutes{
+     position: absolute;
+     width: 4px;
+     height: 50px;
+     background:  yellowgreen;
+     left: calc(50% - 2px);
+     top: calc(50% - 50px);
+     animation: s-rotate 3600s infinite steps(3600);
+     transform-origin:  2px 50px;
+     z-index: 2;
+}
+.hours{
+     position: absolute;
+     width: 6px;
+     height: 40px;
+     background:  red;
+     left: calc(50% - 3px);
+     top: calc(50% - 40px);
+     animation: s-rotate 43200s infinite steps(43200);
+     transform-origin: 2px 40px;
+     z-index: 3;
+}
+.metronom{
+     width: 4px;
+     height: 100px;
+     background: silver;
+     margin: 0 auto;
+     position: absolute;
+     left: calc(50% - 2px);
+     animation: tik 1.5s ease infinite;
+}
+@keyframes tik{
+     0%{ transform: rotate(45deg); }
+     50%{ transform: rotate(-45deg); }
+     100%{ transform: rotate(45deg); }
+}
