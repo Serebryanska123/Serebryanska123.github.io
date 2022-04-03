@@ -1,0 +1,78 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+nav{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    background: #ff8261;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: .9rem;
+    transition: 0.2s ease;
+}
+nav a:hover{
+    background: #44a8cc;
+}
+.active{
+    background: #52cbf8;
+}
+header{
+    background: #222836;
+    color: #fff;
+    text-align: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 , h2{
+    margin: 0;
+}
+h1{font-size: 5rem; margin-bottom: 70px;}
+h2{font-size: 2rem;}
+.options{
+    background: #e7f4f8;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.options input{
+    height: 34px;
+    width: 300px;
+    font-size: 1.4rem;
+    padding-left: 20px;
+    margin: 0 20px;
+}
+.options select{
+    height: 40px;
+    width: 140px;
+    font-size: 1.4rem;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+.options button{
+    border: none;
+    background: #ff8261;
+    height: 40px;
+    color:#fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0 64px;
+    cursor: pointer;
+}
+.options button:hover{
+    background: #52cbf8;
+}
